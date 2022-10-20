@@ -1,0 +1,2 @@
+# SoC_upcounter_clear_on_off_reset
+The system has AXI4 BUS lite module and FND controller module. Input clear only affects FND controller module. So, it seems like pushing pause button. Because the number displayed on the FND is counted on the vitis(software) level, not vivado(hardware) level. Input reset resets system. Input on, off affects FND display. When input is 1, FND is off. But still the timer counts the time. Input on, off only affects brightness of the FND.
